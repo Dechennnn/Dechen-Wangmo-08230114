@@ -1,0 +1,50 @@
+*{
+ box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+hrader {
+  background-color: blueviolet;
+  padding: 30px;
+  color: black;
+}
+
+/* Style the navigation menu*/
+nav{
+  flex: 1;
+  background: #f68c34;
+  padding: 20px;
+}
+
+/* Style the list insdie the menu */
+nav ul {
+   list-style-type: none;
+   padding: 50px;
+}
+
+article{
+   float: left;
+   padding: 20px;
+   width: 70%;
+   background-color: aliceblue;
+}
+
+/* Style the footer*/
+footer{
+    background-color: #f5a273;
+    padding: 10px;
+    text-align:center;
+    color: black
+}
+
+/* Responsive layout - makes the two columns/boxes stack on the two columns/ boxes stacl on top of each other instead of next to each other, on small screens */
+ @media (max-width: 6--px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+ }
